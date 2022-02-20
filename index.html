@@ -1,9 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <title>SorkoPiko Games Store</title>
   </head>
   <body>
+    <div class="banner">
+      <div class="banner__content">
+        <div class="banner__text">
+          <strong>Welcome back!</strong> We have a new website! Instead of <a class="banner__link" href="/">sorkopikogames.github.io</a>, we now have <a class="banner__link" href="/">shop.sorkopiko.com</a>!
+        </div>
+        <button class="banner__close" type="button">
+            <span class="material-icons-outlined">
+            cancel
+            </span>
+        </button>
+      </div>
+    </div>
+    <script>
+      document.querySelector(".banner__close").addEventListener("click", function() {
+        this.closest(".banner").style.display = "none";
+      })
+    </script>
     <div id="my-store-68755574"></div>
     <div>
       <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?68755574&data_platform=code&data_date=2021-11-27" charset="utf-8"></script><script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-68755574");</script>
